@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+}
+
+#time,
+#min__count {
+  display: inline-block;
+}
+
+#min__count {
+  display: none;
+} 
