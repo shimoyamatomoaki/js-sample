@@ -49,6 +49,6 @@ window.onload = function() {
   }
 
   minCountShow();
-  setInterval(minCountDown, 100);
+  setInterval(minCountDown, 1000 / 10);
   setInterval(numLength,1000);
 };
