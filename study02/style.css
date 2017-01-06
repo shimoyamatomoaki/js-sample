@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+body {
+  text-align: center;
+}
+
 #time,
 #min__count {
   display: inline-block;
