@@ -6,11 +6,6 @@ body {
   text-align: center;
 }
 
-#time,
-#min__count {
+#time {
   display: inline-block;
 }
-
-#min__count {
-  display: none;
-} 

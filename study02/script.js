@@ -23,32 +23,30 @@ window.onload = function() {
   setInterval(countdown, 1000);
 
 
-
-  var minCount = document.getElementById("min__count");
+  var minTime = document.getElementById("min__time");
   var minNumCount = 9;
+  minTime.style.display = "none";
 
-  function minCountShow() {
-    minCount.textContent = "." + minNumCount;
+  function numLength() {
+    if ( countStart < 10 ) {
+      minTime.textContent = "." + minNumCount;
+      minTime.style.display = "inline-block";
+    } else {
+      minTime.textContent = "";
+      minTime.style.display = "none";
+    }
   }
 
-  function minCountDown() {
+  function minTimeDown() {
     minNumCount--;
 
     if ( minNumCount < 0 ) {
       minNumCount = 9;
     }
-    minCountShow();
+
+    numLength();
   }
 
-  function numLength() {
-      if ( countStart < 10 ) {
-      minCount.style.display = "inline-block";
-    } else {
-      minCount.style.display = "none";
-    }
-  }
-
-  minCountShow();
-  setInterval(minCountDown, 1000 / 10);
-  setInterval(numLength,1000);
+  setInterval(numLength, 100);
+  setInterval(minTimeDown, 100);
 };
