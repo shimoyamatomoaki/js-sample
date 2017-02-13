@@ -53,3 +53,69 @@ body div {
   list-style: none;
   transition: 300ms;
 }
+
+.btn {
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 40px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.button--green {
+  color: #91d142;
+  border: 1px solid #91d142;
+}
+
+.button--green:hover {
+  color: #fff;
+  background-color: #91d142;
+}
+
+.button--pink {
+  color: #ee86b4;
+  border: 1px solid #ee86b4;
+}
+
+.button--pink:hover {
+  color: #fff;
+  background-color: #ee86b4;
+}
+
+.button--orange {
+  color: #f79903;
+  border: 1px solid #f79903;
+}
+
+.button--orange:hover {
+  color: #fff;
+  background-color: #f79903;
+}
+
+.button--black {
+  color: #000;
+  border: 1px solid #000;
+}
+
+.button--black:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.btn--wide {
+  margin-top: 0;
+  margin-right: 0;
+  display: block;
+  text-align: center;
+}
+
+.button--wide {
+  width: 100%;
+}
