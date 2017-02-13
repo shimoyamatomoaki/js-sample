@@ -119,3 +119,34 @@ body div {
 .button--wide {
   width: 100%;
 }
+
+.btn--square {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn__txt {
+  position: relative;
+  padding: 5px 35px;
+  background-color: #120e4d;
+  border: 2px solid #120e4d;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.btn__txt:hover {
+  background-color: #fff;
+  border: 2px solid #120e4d;
+  color: #120e4d;
+}
+
+.btn__txt::after {
+  content:">";
+  position: absolute;
+  right: 20px;
+  transition: 0.1s;
+}
+
+.btn__txt:hover::after {
+  right: 8px;
+}
